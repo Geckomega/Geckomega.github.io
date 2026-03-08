@@ -1,0 +1,386 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Geckomega - MyPortfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+  <div class="nav-left">
+    <img src="images/logo/logo.png" alt="Logo">
+  </div>
+
+  <div class="nav-center">
+  <a id="nav-about" href="#about">About Me</a>
+  <a id="nav-projects" href="#projects">Projects</a>
+  <a id="nav-contact" href="#contact">Contact</a>
+</div>
+
+  <div class="nav-right">
+  <button id="lang-en" class="lang-btn active">EN</button>
+  <button id="lang-fr" class="lang-btn">FR</button>
+</div>
+
+</nav>
+
+
+  <!-- About Section -->
+  <section id="about" class="active">
+
+  <div class="about-grid">
+
+    <h2 id="about-title">About Me</h2>
+
+    <div class="about-text">
+      <p id="about-text">
+          Welcome to my portfolio! My name is Adam Arseneau (Geckomega) and I'm 
+          a passionate programmer and game developer. I studied in game development
+          in NBCC Miramichi for 2 years and have worked on many projects individually
+          and in teams. This website contains demos of projects I am proud to have worked
+          on and it will showcase my competencies.
+        </p>
+    </div>
+
+    <div class="about-image">
+      <video id="slideshow" autoplay muted playsinline></video>
+    </div>
+
+  </div>
+
+
+</section>
+
+ <!-- Projects Section -->
+<section id="projects">
+  <h2 id="projects-title">Projects</h2>
+
+  <div class="project">
+
+    <!-- Project Title -->
+    <h3 class="project-title">Rise of The Cult (GGJ 2026)</h3>
+
+    <div class="project-grid">
+
+      <!-- MEDIA COLUMN -->
+      <div class="project-media">
+        <img src="images/projects/riseofthecult/image1.png" alt="Rise of the Cult Title screen">
+        <img src="images/projects/riseofthecult/image2.png" alt="Rise of the Cult forest level">
+        <img src="images/projects/riseofthecult/image3.png" alt="Rise of the Cult basement level">
+      </div>
+
+      <!-- TEXT COLUMN -->
+      <div class="project-info">
+
+        <!-- Overview -->
+        <div class="project-section">
+          <h4>Overview</h4>
+          <p id="project-overview">
+            This project is a 2d sidescroller horror game made for the global game jam in 2026
+          </p>
+        </div>
+
+        <!-- Role -->
+        <div class="project-section">
+          <h4>My Role</h4>
+          <ul id="project-role">
+            <li>Team leader</li>
+            <li>Programmer</li>
+          </ul>
+        </div>
+
+        <!-- Technical Breakdown -->
+        <div class="project-section">
+          <h4>Technical Breakdown</h4>
+          <p id="project-technical">
+            I was the sole programmer on the project, responsible for all gameplay systems and ensuring the overall feel of the game was smooth and responsive. The core mechanic revolves around an enemy in the background chasing the player while the player navigates the map and hides behind walls or furniture.
+            The enemy behavior is driven by a state machine. It patrols between predefined transforms in the scene and transitions into a chase state when the player enters its detection hitbox. This system handles movement, state transitions, and detection logic in a modular way.
+            The game also includes an interactable drawer minigame. On scene load, drawers are assigned randomized contents (a key or a code), allowing each playthrough to be slightly different. This system uses simple randomization and scene‑based initialization to keep the logic lightweight.
+            The player controller supports left/right movement, jumping, and crouching. When crouching behind walls, couches, or drawers, the player becomes invisible to the enemy, integrating stealth mechanics directly into the movement system.
+          </p>
+        </div>
+
+        <!-- Challenges -->
+        <div class="project-section">
+          <h4>Challenges & Solutions</h4>
+          <p id="project-challenges">
+            The biggest challenge was the strict 48‑hour time limit of the game jam. As a team, we had to prioritize essential features first to ensure the game was playable before adding any polish. This required constant communication, quick decision‑making, and a willingness to cut or simplify ideas when necessary.
+            Another major challenge came from using GitHub for the first time as a team. Early on, we frequently overwrote each other’s work or caused merge conflicts, which forced us to redo parts of the project. To solve this, we improved our communication around changes, coordinated who was working on what, and made sure to pull and push updates more carefully. By the end of the jam, our workflow was much smoother and more organized.
+          </p>
+        </div>
+
+        <!-- What You're Proud Of -->
+        <div class="project-section">
+          <h4>What I'm Proud Of</h4>
+          <ul id="project-proud">
+            <li>Some scripts in the game are modular and easily scalable/re-usable</li>
+            <li>I used new c# techniques for different parts of the game which worked nicely</li>
+            <li>The final product looked really good and was enjoyable to play.</li>
+            <li>The team worked together and cooperated perfectly</li>
+          </ul>
+        </div>
+
+        <div class="project-section">
+          <h4>Weblink to Rise of The Cult</h4>
+          <p class="project-link">
+            <a href="https://globalgamejam.org/games/2026/rise-cult-1" target="_blank">
+                https://globalgamejam.org/games/2026/rise-cult-1
+            </a>
+          </p>
+        </div>
+
+
+      </div><!-- end project-info -->
+
+    </div><!-- end project-grid -->
+
+  </div><!-- end project -->
+</section>
+
+
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+
+  <h2 id="contact-title">Contact</h2>
+
+  <div class="contact-info">
+
+    <h3 id="contact-reach">You can reach me at:</h3>
+
+    <p>  
+      Email -> GeckomegaDV@outlook.com 
+      <a class="email-button" href="mailto:GeckomegaDV@outlook.com">Email Me</a>
+    </p>
+
+  </div>
+
+</section>
+
+    <p class="disclaimer">
+  Disclaimer: Some visuals and audio elements showcased here belong to their original creators. Please consider supporting the artists behind the work.
+</p>
+
+  <!-- Scripts -->
+
+<script>
+  const textContent = {
+  en: {
+    nav_about: "About Me",
+    nav_projects: "Projects",
+    nav_contact: "Contact",
+
+    about_title: "About Me",
+    about_text: `Welcome to my portfolio! My name is Adam Arseneau (Geckomega) and I'm 
+    a passionate programmer and game developer. I studied in game development
+    in NBCC Miramichi for 2 years and have worked on many projects individually
+    and in teams. This website contains demos of projects I am proud to have worked
+    on and it will showcase my competencies.`,
+
+    projects_title: "Projects",
+    projects_text: "Here are some things I've worked on.",
+
+    contact_title: "Contact",
+    contact_reach: "You can reach me at:",
+
+    disclaimer: `Disclaimer: Some visuals and audio elements showcased here belong to their original creators. Please consider supporting the artists behind the work.`,
+
+    project_overview: "This project is a 2d sidescroller horror game made for the global game jam in 2026",
+
+    project_role: ["Team leader", "Programmer"],
+
+    project_technical: `I was the sole programmer on the project, responsible for all gameplay systems and ensuring the overall feel of the game was smooth and responsive. The core mechanic revolves around an enemy in the background chasing the player while the player navigates the map and hides behind walls or furniture.
+    The enemy behavior is driven by a state machine. It patrols between predefined transforms in the scene and transitions into a chase state when the player enters its detection hitbox. This system handles movement, state transitions, and detection logic in a modular way.
+    The game also includes an interactable drawer minigame. On scene load, drawers are assigned randomized contents (a key or a code), allowing each playthrough to be slightly different. This system uses simple randomization and scene‑based initialization to keep the logic lightweight.
+    The player controller supports left/right movement, jumping, and crouching. When crouching behind walls, couches, or drawers, the player becomes invisible to the enemy, integrating stealth mechanics directly into the movement system.`,
+
+    project_challenges: `The biggest challenge was the strict 48‑hour time limit of the game jam. As a team, we had to prioritize essential features first to ensure the game was playable before adding any polish. This required constant communication, quick decision‑making, and a willingness to cut or simplify ideas when necessary.
+    Another major challenge came from using GitHub for the first time as a team. Early on, we frequently overwrote each other’s work or caused merge conflicts, which forced us to redo parts of the project. To solve this, we improved our communication around changes, coordinated who was working on what, and made sure to pull and push updates more carefully. By the end of the jam, our workflow was much smoother and more organized.`,
+
+    project_proud: [
+      "Some scripts in the game are modular and easily scalable/re-usable",
+      "I used new C# techniques for different parts of the game which worked nicely",
+      "The final product looked really good and was enjoyable to play.",
+      "The team worked together and cooperated perfectly"
+    ]
+  },
+
+  fr: {
+    nav_about: "À propos",
+    nav_projects: "Projets",
+    nav_contact: "Contact",
+
+    about_title: "À propos de moi",
+    about_text: `Bienvenue sur mon portfolio! Je m'appelle Adam Arseneau (Geckomega) et je suis 
+    un programmeur et développeur de jeux passionné. J'ai étudié le développement
+    de jeux au NBCC Miramichi pendant 2 ans et j'ai travaillé sur plusieurs projets,
+    autant individuellement qu'en équipe. Ce site présente des démos de projets dont je suis fier
+    et met en valeur mes compétences.`,
+
+    projects_title: "Projets",
+    projects_text: "Voici quelques projets sur lesquels j'ai travaillé.",
+
+    contact_title: "Contact",
+    contact_reach: "Vous pouvez me joindre à:",
+
+    disclaimer: `Avis : Certains éléments visuels et audio présentés ici appartiennent à leurs créateurs originaux. Merci d’encourager les artistes derrière ces œuvres.`,
+
+    project_overview: "Ce projet est un jeu d’horreur en 2D de type side‑scroller créé pour le Global Game Jam 2026",
+
+    project_role: ["Chef d’équipe", "Programmeur"],
+
+    project_technical: `J’étais le seul programmeur du projet, responsable de tous les systèmes de gameplay et de la fluidité générale du jeu. Le mécanisme principal repose sur un ennemi en arrière‑plan qui poursuit le joueur pendant que celui‑ci navigue dans la carte et se cache derrière des murs ou des meubles.
+    Le comportement de l’ennemi est géré par une machine à états. Il patrouille entre des points prédéfinis dans la scène et passe en mode poursuite lorsque le joueur entre dans sa zone de détection. Ce système gère le mouvement, les transitions d’état et la logique de détection de manière modulaire.
+    Le jeu inclut également un mini‑jeu de tiroirs interactifs. Au chargement de la scène, les tiroirs reçoivent un contenu aléatoire (une clé ou un code), ce qui rend chaque partie légèrement différente. Ce système utilise une simple randomisation et une initialisation basée sur la scène pour rester léger.
+    Le contrôleur du joueur permet de se déplacer à gauche/droite, de sauter et de s’accroupir. Lorsqu’il s’accroupit derrière des murs, des divans ou des tiroirs, le joueur devient invisible pour l’ennemi, intégrant ainsi des mécaniques d’infiltration directement dans le système de mouvement.`,
+
+    project_challenges: `Le plus grand défi était la limite stricte de 48 heures du game jam. En équipe, nous devions prioriser les fonctionnalités essentielles pour garantir que le jeu soit jouable avant d’ajouter du polish. Cela demandait une communication constante, des décisions rapides et la volonté de couper ou simplifier certaines idées.
+    Un autre défi majeur venait de l’utilisation de GitHub pour la première fois en équipe. Au début, nous écrasions souvent le travail des autres ou créions des conflits de fusion, ce qui nous obligeait à refaire certaines parties du projet. Pour résoudre cela, nous avons amélioré notre communication, mieux coordonné qui travaillait sur quoi et fait plus attention aux pulls/pushes. À la fin du jam, notre workflow était beaucoup plus fluide et organisé.`,
+
+    project_proud: [
+      "Certains scripts du jeu sont modulaires et facilement réutilisables",
+      "J’ai utilisé de nouvelles techniques C# qui ont très bien fonctionné",
+      "Le produit final était visuellement réussi et agréable à jouer",
+      "L’équipe a travaillé ensemble de manière exemplaire"
+    ]
+  }
+};
+
+</script>
+
+<script>
+  const langButtons = document.querySelectorAll(".lang-btn");
+
+  function switchLanguage(lang) {
+    // Update nav
+    document.getElementById("nav-about").textContent = textContent[lang].nav_about;
+    document.getElementById("nav-projects").textContent = textContent[lang].nav_projects;
+    document.getElementById("nav-contact").textContent = textContent[lang].nav_contact;
+
+    // Update About
+    document.getElementById("about-title").textContent = textContent[lang].about_title;
+    document.getElementById("about-text").textContent = textContent[lang].about_text;
+
+    // Update Projects section header
+    document.getElementById("projects-title").textContent = textContent[lang].projects_title;
+    // REMOVE THIS — it breaks everything:
+    // document.getElementById("projects-text").textContent = textContent[lang].projects_text;
+
+    // Update Contact
+    document.getElementById("contact-title").textContent = textContent[lang].contact_title;
+    document.getElementById("contact-reach").textContent = textContent[lang].contact_reach;
+
+    // Update disclaimers
+    document.querySelectorAll(".disclaimer").forEach(d => {
+      d.textContent = textContent[lang].disclaimer;
+    });
+
+    /* ============================
+       PROJECT SECTION UPDATES
+       ============================ */
+
+    // Overview
+    document.getElementById("project-overview").textContent =
+      textContent[lang].project_overview;
+
+    // Role (list)
+    const roleList = document.getElementById("project-role");
+    roleList.innerHTML = "";
+    textContent[lang].project_role.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      roleList.appendChild(li);
+    });
+
+    // Technical Breakdown
+    document.getElementById("project-technical").textContent =
+      textContent[lang].project_technical;
+
+    // Challenges
+    document.getElementById("project-challenges").textContent =
+      textContent[lang].project_challenges;
+
+    // What I'm Proud Of (list)
+    const proudList = document.getElementById("project-proud");
+    proudList.innerHTML = "";
+    textContent[lang].project_proud.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      proudList.appendChild(li);
+    });
+
+    // Button highlight
+    langButtons.forEach(btn => btn.classList.remove("active"));
+    document.getElementById("lang-" + lang).classList.add("active");
+  }
+
+  // Button listeners
+  document.getElementById("lang-en").addEventListener("click", () => switchLanguage("en"));
+  document.getElementById("lang-fr").addEventListener("click", () => switchLanguage("fr"));
+
+  // Default language
+  switchLanguage("en");
+</script>
+
+<script>
+  const videos = [
+    "videos/about/clip1.mp4",
+    "videos/about/clip2.mp4",
+  ];
+
+  let index = 0;
+  const slideshow = document.getElementById("slideshow");
+
+  function fadeToNextVideo() {
+    // Fade out
+    slideshow.style.opacity = 0;
+
+    setTimeout(() => {
+      // Switch video
+      slideshow.src = videos[index];
+      slideshow.play();
+
+      // Fade in
+      slideshow.style.opacity = 1;
+
+      // Move to next index
+      index = (index + 1) % videos.length;
+    }, 500); // 0.5 second fade
+  }
+
+  // When video ends, fade to next
+  slideshow.addEventListener("ended", fadeToNextVideo);
+
+  // Start
+  fadeToNextVideo();
+</script>
+
+<script>
+  // Get all nav links and sections
+  const links = document.querySelectorAll("nav a");
+  const sections = document.querySelectorAll("section");
+
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault(); // stop the default scroll behavior
+
+      const target = this.getAttribute("href").substring(1); // remove the #
+
+      // Hide all sections
+      sections.forEach(sec => sec.classList.remove("active"));
+
+      // Show the clicked section
+      document.getElementById(target).classList.add("active");
+    });
+  });
+</script>
+
+</body>
+
+</html>
