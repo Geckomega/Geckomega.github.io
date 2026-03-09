@@ -1,0 +1,120 @@
+/* ABOUT */
+#about-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  background-color: #d3d3d3;
+  border: 4px solid #525252;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.6;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#slideshow {
+  width: 800px;
+  border-radius: 10px;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  margin-left: 50px;
+}
+
+/* CONTACT */
+#contact-title {
+  margin-left: 350px;
+}
+
+.contact-info {
+  width: 30%;
+  background-color: #d3d3d3;
+  border: 4px solid #525252;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.6;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-info h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.email-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  justify-content: center; 
+  width: 100%;
+}
+
+/* PROJECTS */
+.project {
+  margin: 3rem 0;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #111;
+  border: 1px solid #222;
+}
+
+.project-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.project-media img {
+  margin-left: 15%;
+  width: 60%;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-section h4 {
+  margin-bottom: 0.3rem;
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+.project-section p,
+.project-section ul {
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-link a {
+  color: #4aa3ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.project-link a:hover {
+  text-decoration: underline;
+  color: #82c3ff;
+}
+
+#project-role li,
+#project-proud li {
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

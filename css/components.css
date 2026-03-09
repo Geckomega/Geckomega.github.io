@@ -1,0 +1,71 @@
+/* NAVBAR */
+nav {
+  background-color: #222;
+  padding: 1px 15px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+.nav-left img {
+  height: 80px;
+}
+
+.nav-center {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-center a {
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.nav-center a:hover {
+  text-decoration: underline;
+}
+
+.nav-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* LANGUAGE BUTTONS */
+.lang-btn {
+  background: none;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  color: #ccc;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.lang-btn.active {
+  background: #fff;
+  color: #000;
+}
+
+.lang-btn:not(.active):hover {
+  background: rgba(255,255,255,0.3);
+  color: white;
+}
+
+/* EMAIL BUTTON */
+.email-button {
+  background: #44b648;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.email-button:hover {
+  background: #45a049;
+}
